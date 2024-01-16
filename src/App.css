@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+}
+
+.close_button {
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 13px;
+  border-radius: 50px;
+  color: rgb(49, 49, 49);
+  padding-right: 5px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+.close_button:hover {
+  background-color: #cacaca36;
+}
+.chip_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container {
+  margin: 100px;
+  width: 80%;
+}
+.chips {
+  border: 1px solid #ffffff;
+  z-index: 0;
+  border-radius: 2px;
+  font-size: 15px;
+
+  max-width: 90%;
+  input {
+    border: none;
+    appearance: none;
+  }
+}
+.chiptext {
+  margin-top: 5px;
+  color: #27282b;
+  font-weight: 500;
+}
+.chip {
+  margin-left: 30px;
+  margin-top: 30px;
+  width: auto;
+
+  display: flex;
+  justify-content: space-around;
+  border-radius: 40px;
+  padding: 4px;
+  background-color: #f9f9f9;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+.profileimage {
+  border-radius: 100px;
+  vertical-align: middle;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.input_container {
+  width: 100px;
+  margin-top: 30px;
+}
+.searchinput {
+  outline: none;
+  margin-top: 10px;
+  width: 100px;
+  font-size: 15px;
+  height: 30px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+.suggestion_box {
+  list-style-type: none;
+  max-height: 180px;
+  overflow-y: scroll;
+}
+.suggestion_container {
+  width: 300px;
+  margin-left: 20px;
+  position: absolute;
+  z-index: 2;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.suggestions {
+  display: flex;
+  background-color: #f1f1f1;
+  justify-content: space-around;
+  text-align: left;
+  height: 50px;
+  cursor: pointer;
+}
+.suggestions:hover {
+  background-color: #d4d4d4;
+}
+.suggestion_name {
+  font-size: 12px;
+  text-align: left;
+  display: flex;
+  justify-content: start;
+  color: black;
+}
+.suggestion_email {
+  font-size: 12px;
+  color: grey;
+}
+.suggestionimage {
+  border-radius: 100px;
+  vertical-align: bottom;
+}
